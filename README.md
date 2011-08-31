@@ -36,4 +36,4 @@ you can change the speed, background click close and the class that closes the m
 - Open Modal : Find it out yourself !
 
 ### License
-
+	Under MIT License
