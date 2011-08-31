@@ -1,0 +1,114 @@
+	/*--------------------------------------------------
+	Styling for Sliding Modals
+	-------------------------------------------------- */	
+
+	/*	--------------------------------------------------
+	Background
+	-------------------------------------------------- */	
+
+	.slideup-modal-bg { 
+		position: fixed; 
+		height: 100%;
+		width: 100%;
+		background: #000;
+		opacity: .4;
+		filter: alpha(opacity = 40); /* IE */	
+		z-index: 9998;
+		display: none;
+		top: 0;
+		left: 0; 
+		}
+	
+	/*	--------------------------------------------------
+	The actual Modal
+	-------------------------------------------------- */	
+
+	.slideup-modal {
+		visibility: hidden;
+		top: 0px; 
+		left: 50%;
+		margin-left: -300px;
+		width: 520px;
+		height: auto;
+		max-height: 94%;
+		overflow-x: hidden;
+		min-height: 144px;
+		background: #eee url(modal-gloss.png) no-repeat;
+		position: fixed;
+		z-index: 9999;
+		padding: 0px 29px 25px;
+		-moz-border-radius: 0 0 5px 5px;
+		-webkit-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;
+		-o-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-webkit-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.4);
+		box-shadow: 0 0 10px rgba(0,0,0,.4);
+		}
+		/*
+		* Optional Webkit scrollbars...Uncomment it if you want
+
+		.slideup-modal::-webkit-scrollbar-track-piece{
+			background-color:#eee;
+			-webkit-border-radius:0;
+		}
+
+		.slideup-modal::-webkit-scrollbar{
+			background-color:rgba(0,0,0,0);
+			width:5px;
+			height:5px;
+		}
+
+		.slideup-modal::-webkit-scrollbar-thumb{ 
+			height:50px;
+			background-color:#999; 
+			-webkit-border-radius:4px;
+			outline:2px solid transparent;
+			outline-offset:-2px;
+			border: 2px solid transparent;
+		}
+
+		.slideup-modal::-webkit-scrollbar-thumb:hover{
+			height:50px; 
+			background-color:#9f9f9f;
+			-webkit-border-radius:4px;
+		}
+
+*/
+	/*	--------------------------------------------------
+	The Close button thingy !
+	-------------------------------------------------- */	
+
+		.close-slideup-modal-button {
+			background: url('close-button.svg') no-repeat -17px 0;
+			width: 17.5px;
+			height: 18.5px;
+			position: absolute;
+			top: 8px;
+			right: 11px;
+			text-indent: -9999px;	
+		}
+
+	/*	--------------------------------------------------
+	FallBack for older browsers ( No support for SVG ) 
+
+		Make sure you have modernizr 
+	-------------------------------------------------- */	
+
+		.no-svg .close-slideup-modal-button{
+			background: url('close-button.png') no-repeat -17px 0;
+		}
+
+	/*	--------------------------------------------------
+	Hover effect
+	-------------------------------------------------- */	
+
+		.close-slideup-modal-button:hover {
+			background-position: 0 0;
+		}
+
+	/*	--------------------------------------------------
+	That's all Folks ! The rest is JavaScript Magic
+	-------------------------------------------------- */	
+
+
