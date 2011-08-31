@@ -4,7 +4,7 @@
   <meta charset='utf-8'>
 
   <title>rigelglen/Slideup-Modal @ GitHub</title>
-
+	<link rel="stylesheet" href="slideup.css" />
   <style type="text/css">
     body {
       margin-top: 1.0em;
@@ -19,12 +19,13 @@
     h1 { font-size: 3.8em; color: #5c2700; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #5c2700; }
+ h2 { font-size: 1.5em; color: #5c2700; display: block; border-bottom: 1px solid #5c2700; }
     h3 { text-align: center; color: #5c2700; }
     a { color: #5c2700; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
+	 pre[rel=terminal]:before{content:"$";}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
   </style>
@@ -51,38 +52,35 @@
 
     <p>Slideup Modals is well... as the name suggests, a modal that slides from the top, probably the easiest modal to deploy !</p><h2>Dependencies</h2>
 <p>Chrome, Firefox 3+, Safari 3+, Opera 10+, Internet Explorer 7+ ( 6+ except for fixed positioning )</p>
+
+<h1 style="text-align: center;background: #4096ee;
+background: -moz-linear-gradient(top, #4096ee 0%, #4096ee 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4096ee), color-stop(100%,#4096ee));
+background: -webkit-linear-gradient(top, #4096ee 0%,#4096ee 100%);
+background: -o-linear-gradient(top, #4096ee 0%,#4096ee 100%);
+background: -ms-linear-gradient(top, #4096ee 0%,#4096ee 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4096ee', endColorstr='#4096ee',GradientType=0 );
+background: linear-gradient(top, #4096ee 0%,#4096ee 100%); margin-top: 30px;margin-bottom: 30px; border-radius: 30px;-moz-border-radius: 30px;-webkit-border-radius: 30px; padding: 4px">
+		<a href="#" data-reveal-id="test-modal" style="text-decoration: none" >Launch the Bad Boy</a>
+</h1>
+
+<div id="test-modal" class="slideup-modal">
+	<h2>Yeah this one Slides ! </h2>
+	<p>Using a bit of CSS, jQuery, We've created a sliding modal. Yeah from the top of the screen ( Just in case this popped up from the bottom <br><wbr>;) ) </wbr>Like Mac modals this one pops up from the top !!! Built upon Zurb's Reveal Modal.... This one creeps up from the top</p>
+</div>
+
 <h2>Install</h2>
 <p>- Drop in the `slideup.css` and `slideup.jquery.js` into your HTML file. For example
 
-		<!DOCTYPE html>
-		<html>
-		<head>
-		<meta charset="UTF-8">
-		<link rel="stylesheet" href="css/slideup.css">
-		</head>
-		<body>
-		<script src="js/libs/slideup.jquery.js"></script>
-		</body>
-		</html>
-- Create the Modal, give it the class `slideup-modal` then add a unique id ( Can be anything, but Compulsary ) and drop in your content.
+- Create the Modal, give it the class `slideup-modal` then add a unique id ( Can be anything, but Compulsary ) and drop in your content.<br/><br>
 
-		<div id="someId" class="slideup-modal">
-			<h2>Loremipsum</h2>
-			<p>lorem-ipsum</p>
-		</div>
+
 - Create the trigger ( Make sure it's an anchor tag ) and give it the attribute of `data-reveal-id` and set it equal to the ID of your modal
 
-		<a href="#" data-reveal-id="someId" >Launch the Modal</a>
+<br><br>
 - Make sure the images have the correct path !
 -Have Fun !</p>
-<h2>License</h2>
-<p>MIT License</p>
-<h2>Authors</h2>
-<p>rigelglen (rigelglen@gmail.com)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>rigelglen (rigelglen@gmail.com)<br/>      </p>
-
-
+	<a href="demo.html">Demo</a>
     <h2>Download</h2>
     <p>
       You can download this project in either
@@ -91,7 +89,7 @@
     </p>
     <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
       by running:
-      <pre>$ git clone git://github.com/rigelglen/Slideup-Modal</pre>
+      <pre rel="terminal"> git clone git://github.com/rigelglen/Slideup-Modal</pre>
     </p>
 
     <div class="footer">
@@ -100,6 +98,7 @@
 
   </div>
 
-  
+  <script src="jquery-1.6.2.min.js"></script>
+  <script src="slideup.jquery.min.js"></script>
 </body>
 </html>
