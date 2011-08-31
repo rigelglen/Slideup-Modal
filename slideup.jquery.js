@@ -89,7 +89,7 @@
 						modalBG.delay(options.animationspeed/2).fadeOut(options.animationspeed/2);
 						modal.animate({
 							"top": "-1000px",
-						}, options.animationspeed, function() {
+						}, options.animationspeed*2, function() {
 							modal.css({'top': '-1000px', 'visibility' : 'hidden', 'display' : 'none'});
 							unlockModal();
 						});					
