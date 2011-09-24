@@ -74,7 +74,7 @@
 					modal.css({'top': modalHeight*-1.5 ,'visibility' : 'visible', 'display' : 'block'});
 						modalBG.fadeIn(options.animationspeed/2);
 						modal.delay(options.animationspeed/2).animate({
-							"top": '0px',
+							"top": '0px'
 						}, options.animationspeed,unlockModal());					
 					
 					
@@ -88,7 +88,7 @@
 					lockModal();
 						modalBG.delay(options.animationspeed/2).fadeOut(options.animationspeed/2);
 						modal.animate({
-							"top": "-1000px",
+							"top": "-1000px"
 						}, options.animationspeed*2, function() {
 							modal.css({'top': '-1000px', 'visibility' : 'hidden', 'display' : 'none'});
 							unlockModal();
