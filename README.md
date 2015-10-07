@@ -14,7 +14,7 @@ Sleek Sliding Modals, the way they should be .. Simple !
 		<script src="js/libs/slideup.jquery.js"></script>
 		</body>
 		</html>
-- Create the Modal, give it the class `slideup-modal` then add a unique id ( Can be anything, but Compulsary ) and drop in your content.
+- Create the Modal, give it the class `slideup-modal` then add a unique id ( Can be anything, but Compulsory ) and drop in your content.
 
 		<div id="someId" class="slideup-modal">
 			<h2>Loremipsum</h2>
