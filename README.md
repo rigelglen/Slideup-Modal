@@ -31,6 +31,10 @@ Sleek Sliding Modals, the way they should be .. Simple !
 - Go to `slideup.jquery.js` and look at the section under options,
 you can change the speed, background click close and the class that closes the modal
 
+### Screenshot
+
+![Screenshot](https://i.imgur.com/RYiRk7f.png)
+
 ### JavaScript Triggers
 - Close Modal : `var modal = $('.slideup-modal');modal.trigger('reveal:close');`
 - Open Modal : Find it out yourself !
